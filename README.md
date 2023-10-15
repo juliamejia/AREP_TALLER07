@@ -33,6 +33,20 @@ A continuacion adjunto el video de la prueba que se realiza enn AWS:
 [Video Demostracion en AWS](https://www.youtube.com/watch?v=u2Wl_sxUcvc)  
 
 ## ARQUITECTURA  
+<img width="632" alt="image" src="https://github.com/juliamejia/AREP_TALLER07/assets/98657146/3fba4810-de05-470e-a971-8c62738fdafa">  
+
+La arquitectura representada en la imagen adopta un enfoque de dos capas, divididas en la capa de presentación y la capa de datos. La capa de presentación consta de un navegador web y un servicio de inicio de sesión, mientras que la capa de datos incluye dos servidores: uno para el servicio de inicio de sesión y otro para otros servicios.
+
+En el flujo de interacción, el navegador web sirve como punto de entrada para los usuarios. Cuando un usuario realiza una solicitud HTTP, esta se dirige al servicio de inicio de sesión. Este servicio se encarga de autenticar las credenciales del usuario y, si son válidas, emite una respuesta HTTP que incluye un token de autorización. Luego, el navegador web utiliza este token para realizar una nueva solicitud HTTP al otro servidor, que proporciona los datos requeridos.
+
+Esta arquitectura está meticulosamente diseñada para asegurar la integridad, la autorización y la autenticación tanto a nivel de usuario como de servidor.
+
+Integridad: La integridad de los datos se protege mediante el uso de cifrado SSL/TLS. Todas las comunicaciones entre el navegador web y los servidores se cifran, evitando que terceros puedan interceptar o alterar la información.
+
+Autorización: La autorización se logra mediante el empleo de tokens de autorización. Estos tokens sirven para verificar que los usuarios poseen los permisos necesarios para acceder a los datos y servicios.
+
+Autenticación: La autenticación se garantiza mediante el uso de contraseñas, que permiten verificar la identidad de los usuarios.  
+
 
    
 
